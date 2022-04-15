@@ -1,0 +1,212 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #136970;
+}
+
+#wrapper {
+    width: 100%;
+}
+
+/* MENU A METTRE DANS UN CSS */
+/* ========================================================================= */
+@media screen and (min-width: 768px) {
+
+.menu ul {
+    border-bottom: 3px solid #95A7AA;
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    background-color: #173238;
+    padding: 1%;
+    max-height: 50px;
+}
+
+.menu .bkg {
+    list-style: none;
+    max-height: 15px;
+    margin-left: 12%;
+	  margin-top: 15px;
+}
+
+.menu .bkg a:hover {
+    background-color: #121415;
+    transition-duration: 0.8s;
+    color: white;
+}
+
+.menu .bkg a {
+    color: #95A7AA;
+    text-decoration: none;
+    font-family: 'Lucida Console', Monaco, monospace;
+    border: 1px solid red;
+    border-radius: 30px;
+	  padding: 15px;
+	  transition-duration: 0.8s;
+    background-color: #3C3C3C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.menu img{
+    margin: -15px;
+    border-bottom: 3px solid #95A7AA;
+    border-right: 3px solid #95A7AA;
+    border-radius: 50%;
+    background-color: #173238;
+    animation-name: rotate;
+    animation-duration: 0.8s;
+}
+
+.menu img:hover{
+	transform: rotate(360deg);
+	transition-duration: 0.8s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0.0turn);
+    } to {
+        transform: rotate(1.0turn);
+    }
+}
+
+}
+
+/* ========================================================================= */
+
+@media screen and (min-width: 1024px) {
+
+.menu ul {
+    border-bottom: 3px solid #95A7AA;
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    background-color: #173238;
+    padding: 1%;
+    max-height: 50px;
+}
+
+.menu .bkg {
+    list-style: none;
+    max-height: 15px;
+    margin-left: 14%;
+	margin-top: 15px;
+}
+
+.menu .bkg a:hover {
+    background-color: #121415;
+    transition-duration: 0.8s;
+    color: white;
+}
+
+.menu .bkg a {
+    color: #95A7AA;
+    text-decoration: none;
+    font-family: 'Lucida Console', Monaco, monospace;
+    border: 1px solid red;
+    border-radius: 30px;
+	padding: 15px;
+	transition-duration: 0.8s;
+	background-color: #3C3C3C;
+	border: 2px solid #95A7AA;
+    border-radius: 30px;
+	box-shadow: 10px 5px 5px black;
+}
+
+.menu img{
+    margin: -15px;
+    border-bottom: 3px solid #95A7AA;
+    border-right: 3px solid #95A7AA;
+    border-radius: 50%;
+    background-color: #173238;
+	animation-name: rotate;
+    animation-duration: 0.8s;
+}
+
+.menu img:hover{
+	transform: rotate(360deg);
+	transition-duration: 0.8s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0.0turn);
+    } to {
+        transform: rotate(1.0turn);
+    }
+}
+
+}
+
+/* ========================================================================= */
+
+@media screen and (min-width: 1440px) {
+
+.menu ul {
+    border-bottom: 3px solid #95A7AA;
+    list-style-type: none;
+    display: flex;
+    justify-content: start;
+    background-color: #173238;
+    padding: 1%;
+    max-height: 50px;
+}
+
+.menu .bkg {
+    list-style: none;
+    max-height: 15px;
+    margin-left: 15%;
+	margin-top: 15px;
+}
+
+.menu .bkg a:hover {
+    background-color: #121415;
+    transition-duration: 0.8s;
+    color: white;
+}
+
+.menu .bkg a {
+    color: #95A7AA;
+    text-decoration: none;
+    font-family: 'Lucida Console', Monaco, monospace;
+    border: 1px solid red;
+    border-radius: 30px;
+	padding: 15px;
+	transition-duration: 0.8s;
+	background-color: #3C3C3C;
+	border: 2px solid #95A7AA;
+    border-radius: 30px;
+	box-shadow: 10px 5px 5px black;
+}
+
+.menu img{
+    margin: -15px;
+    border-bottom: 3px solid #95A7AA;
+    border-right: 3px solid #95A7AA;
+    border-radius: 50%;
+    background-color: #173238;
+	animation-name: rotate;
+    animation-duration: 0.8s;
+}
+
+.menu img:hover{
+	transform: rotate(360deg);
+	transition-duration: 0.8s;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0.0turn);
+    } to {
+        transform: rotate(1.0turn);
+    }
+}
+
+}
+
+/* ========================================================================= */

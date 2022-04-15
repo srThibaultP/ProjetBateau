@@ -1,0 +1,31 @@
+.nav-body {
+  width: 100%;
+}
+
+.nav-body .row > div {
+  box-sizing: border-box;
+}
+
+.nav-body .row {
+  overflow: hidden;
+}
+
+.nav-body .col-4 {
+  width: calc(100%/3);
+  float: left;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.nav-body p {
+  color: #95A7AA;
+  background-color: #18363C;
+  border: 2px solid #95A7AA;
+  border-radius: 30px;
+  /* padding: 15px; */
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: system-ui;
+}

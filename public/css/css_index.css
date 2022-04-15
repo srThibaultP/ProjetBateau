@@ -1,0 +1,950 @@
+/* ========================================================================= */
+@media screen and (min-width: 320px) {
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 8%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 200px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+@media screen and (min-width: 375px) {
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 8%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 200px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+@media screen and (min-width: 425px) {
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 8%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 200px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+
+
+
+
+
+/* ========================================================================= */
+@media screen and (min-width: 768px) {
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 16%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+                  width: 160px;
+                  margin-left: 80px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 125px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+@media screen and (min-width: 1024px) {
+
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 16%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 125px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+@media screen and (min-width: 1440px) {
+  .nav-body {
+    width: 100%;
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 8%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 40px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+                  width: auto;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 200px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */
+/* ========================================================================= */
+@media screen and (min-width: 2560px) {
+  .nav-body {
+    width: 100%;
+
+  }
+
+  .nav-body .row > div {
+    box-sizing: border-box;
+    float: left;
+  }
+
+  .nav-body .row {
+    overflow: hidden;
+    max-height: 635px;
+  }
+
+  .nav-body .col-4 {
+    width: calc(100%/2);
+    margin-top: 1%;
+    text-align: center;
+    max-height: 600px;
+  }
+
+  .nav-body .col-3 {
+    width: calc(100%/4);
+  }
+
+  .nav-body .fleche{
+    margin-top: 6%;
+  }
+
+  .nav-body .ajust-arrow{
+    margin-left: 160px;
+  }
+
+  .row .col-4 {
+    overflow: hidden;
+  }
+
+  .nav-body h2 {
+    color: #95A7AA;
+    background-color: #18363C;
+    border: 2px solid #95A7AA;
+    border-radius: 30px;
+    padding: 15px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .nav-body .col-3 li {
+    margin-bottom: 130px;
+  }
+
+
+  /* ====================================MAP================================== */
+  #map{ /* la carte DOIT avoir une hauteur sinon elle n'apparaît pas */
+                  height: 632px;
+                  width: 600px;
+              }
+  /* =================================ANIMATION================================ */
+  #fleche_vent {
+      position:relative;
+      height: 30px;
+      width: 300px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      background-size: 90%;
+      background-position: center;
+      background-repeat: no-repeat;
+  }
+
+  #bateau_rotation {
+      z-index: 1;
+      position:relative;
+      bottom: 385px;
+      left: 465px;
+      height: 100px;
+      width:300px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+  }
+
+  #voiles_rotation_1 {
+      z-index: 2;
+      position:absolute;
+      bottom: 7px; left: 40px;
+      height: 25px;
+      width: 80px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #voiles_rotation_2 {
+      z-index: 4;
+      position:absolute;
+      bottom: 7px; left: 150px;
+      height: 25px;
+      width: 150px;
+      margin: 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+
+  #safran_rotation {
+      z-index: 3;
+      position:absolute;
+      bottom: 12px; left: 250px;
+      height: 5px;
+      width: 55px;
+      margin: 30px;
+      background: #943002;
+      border-radius: 30px 10px 10px 30px;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+      transform-origin: left center;
+  }
+  /* ========================================================================== */
+}
+/* ========================================================================= */

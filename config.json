@@ -1,0 +1,25 @@
+{
+    "cors": {
+        "origin": "http://localhost",
+        "methods": [
+            "GET",
+            "POST"
+        ],
+        "credentials": true
+    },
+    "mysql": {
+        "connectionLimit" : 30,
+        "host": "localhost",
+        "user": "root",
+        "password": "password",
+        "database": "BDDProjetDataBateau",
+        "multipleStatements": "true"
+    },
+    "web": {
+        "url" : "localhost",
+        "port": 8080
+    },
+    "mysqlTable": "Modele",
+    "mysqlId": "id_modele",
+    "port": "8080"
+}

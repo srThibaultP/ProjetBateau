@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<link rel="icon" href="image/logo.png" />
+
+	  <meta charset="utf-8">
+	  	<title>Projet-Bateau : Historique</title>
+	  <link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/css_contact.css">
+	</head>
+
+
+	<body>
+		<div id="wrapper">
+				<div class="menu">
+					<ul>
+							<li><a><img class="logo" src="image/logo.png"></a></li>
+							<li class="bkg"><a href="index.html">Accueil</a></li>
+							<li class="bkg"><a href="historique.html">Où est t'il ?</a></li>
+							<li class="bkg"><a href="#">Contact</a></li>
+					</ul>
+				</div>
+		</div>
+
+		<main>
+			<div class="nav-body"
+				<div id="base-12" class="row">
+						<div class="col-4">
+							<img id="exemple" src="image/test.png" width="70%" onclick="changevar();">
+							<p>
+								<b>TOUZEAU Victor</b><br>
+								<i>Développement site web</i>
+							</p>
+						</div>
+						<div class="col-4">
+							<img id="exemple" src="image/test.png" width="70%" >
+							<p>
+								<b>KOWALSKI Joshua</b><br>
+								<i>Communication A</i>
+							</p>
+						</div>
+						<div class="col-4">
+							<img id="exemple" src="image/test.png" width="70%" >
+							<p>
+								<b>LAPORTE Kévin</b><br>
+								<i>Communication B</i>
+							</p>
+						</div>
+				</div>
+			</div>
+		</main>
+
+		<script>
+			var count = 0;
+			function changevar(){
+					count = count + 1;
+						if (count == 12) {
+							window.location.href = "bonus.html";
+						}
+			}
+		</script>
+
+	</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<link rel="icon" href="image/logo.png" />
+
+	  <meta charset="utf-8">
+	  	<title>Projet-Bateau : Bonus</title>
+	  <link rel="stylesheet" href="css/header.css">
+		<link rel="stylesheet" href="css/css_bonus.css">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://raw.githack.com/BartikaKumar/Popify/main/script.js"></script>
+	</head>
+
+
+	<body>
+		<div id="wrapper">
+				<div class="menu">
+					<ul>
+							<li><a><img class="logo" src="image/logo.png"></a></li>
+							<li class="bkg"><a href="index.html">Accueil</a></li>
+							<li class="bkg"><a href="historique.html">Où est t'il ?</a></li>
+							<li class="bkg"><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+		</div>
+
+
+		<header>
+		    Devinez Le Nombre Aléatoire
+		  </header>
+		  <div id="error">
+		    <div>
+		      <p id="wrong" class="err_msg">
+		        Tu as mal deviné !
+		      </p>
+		      <p id="empty" class="err_msg">
+		        Tu n'as pas deviné !
+		      </p>
+
+		      <p id="correct" class="err_msg">
+		        Correct !
+		      </p>
+		      <p id="msg" class="err_msg">
+		        Le nombre que vous avez choisi est supérieur à 100 !
+		      </p>
+		      <p id="msg2" class="err_msg">
+		        Le nombre que vous avez choisi est inférieur à 0 !
+		      </p>
+		      <p id="not_int" class="err_msg">
+		        Votre choix n'est pas un nombre !
+		      </p>
+
+		    </div>
+		  </div>
+		  <div id="main">
+		    <div class="label">
+		      Choix de l'ordinateur
+		    </div>
+		    <div id="comps" class="box">
+		      -
+		    </div>
+
+		    <div class="label">
+		      Votre choix
+		    </div>
+		    <div id="user" class="box">
+		      -
+		    </div>
+		    <div id="run">
+		      <div class="func">
+		        <input type="Number" placeholder="Votre choix" id="user_guess">
+		      </div>
+		      <div class="func">
+		        <button id="btn">Valider</button>
+		      </div>
+		    </div>
+		  </div>
+
+
+			<script type="text/javascript" src="./js/GuessNumber.js"></script>
+	</body>
+
+</html>
