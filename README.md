@@ -29,7 +29,7 @@ Le déploiement de ce projet sur cette dernière version se fait via les command
 
 Mise a jour :
 ```bash
-  sudo apt get update
+  sudo apt update
 ```
 
 NodeJS :
