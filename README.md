@@ -27,13 +27,18 @@ CONFIGURATION :
 
 Le déploiement de ce projet sur cette dernière version se fait via les commande suivant a executer dans un systeme Linux ou via wsl (sur windows).
 
+Mise a jour :
+```bash
+  sudo apt get update
+```
+
 NodeJS :
 ```bash
   sudo apt install nodejs
   sudo apt install npm
 ```
 
-NodeJS :
+Mysql :
 ```bash
   sudo apt install mysql-server
   sudo npm install mysql
