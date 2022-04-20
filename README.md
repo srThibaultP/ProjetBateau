@@ -22,8 +22,14 @@ CONFIGURATION :
 ```
 [Diapositive [Google Slide]](https://docs.google.com/presentation/d/10VwbyRFjuF6Ki-SiaJML8OxZ5xKJOEbo5QIlrghB-JM/edit?usp=sharing)
 
+## Déploiement simplifié via Docker
 
-## Déploiement
+```bash
+  cd Projet_BTS
+  docker-compose up -d
+```
+
+## Déploiement manuel
 
 Le déploiement de ce projet sur cette dernière version se fait via les commande suivant a executer dans un systeme Linux ou via wsl (sur windows).
 
