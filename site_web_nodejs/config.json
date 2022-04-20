@@ -9,7 +9,7 @@
     },
     "mysql": {
         "connectionLimit" : 30,
-        "host": "localhost",
+        "host": "db",
         "user": "root",
         "password": "password",
         "database": "BDDProjetDataBateau",
