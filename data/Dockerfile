@@ -3,4 +3,5 @@ FROM mysql
 # Add the content of the sql-scripts/ directory to your image
 # All scripts in docker-entrypoint-initdb.d/ are automatically
 # executed during container startup
-COPY ./data/ /docker-entrypoint-initdb.d/
+COPY . /docker-entrypoint-initdb.d/
+LABEL org.opencontainers.image.source https://github.com/srthibaultp/projetbateau/
