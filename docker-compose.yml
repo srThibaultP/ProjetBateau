@@ -3,8 +3,6 @@ services:
   db:
     image: mysql:8.0.28
     container_name: mysql
-    ports:
-      - "3306:3306"
     command: --default-authentication-plugin=mysql_native_password
     restart: always
     environment:
@@ -16,10 +14,7 @@ services:
       - ./data:/docker-entrypoint-initdb.d
 
   nodejs:
-    build:
-      context: ./site_web_nodejs
-      dockerfile: Dockerfile
-    image: node:17.9.0-alpine3.15-image
+    image: ghcr.io/srthibaultp/projetbateau:latest
     restart: on-failure
     depends_on:
       - db
